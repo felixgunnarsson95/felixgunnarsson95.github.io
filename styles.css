@@ -3,6 +3,18 @@ body {
   background-color: #55423d;
 }
 
+h1 {
+  font-family: limelight;
+  font-size: 32px;
+}
+
+p {
+  font-family: "Merriweather", serif;
+  font-weight: 300px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -12,6 +24,27 @@ body {
   gap: 32px;
   padding: 8px 16px;
   margin: 0;
+  color: #fff3ec;
+  border-bottom: 16px solid #271c19;
+}
+
+.navbutton {
+  font-family: limelight;
+  color: #fff3ec;
+  text-decoration: none;
+  font-size: 30px;
+  margin: auto 0px 10px;
+  padding: 10px;
+}
+
+.navbutton:hover {
+  color: #ffc0ad;
+  text-shadow: 4px 4px 0px 0px #271c19;
+}
+
+.logo {
+  width: 300px;
+  margin: auto 16px;
 }
 
 .hero-bg {
@@ -19,11 +52,13 @@ body {
   width: 100%;
   padding: 40vh 0px;
   background-color: #e78fb3;
+  border-bottom: 16px solid #271c19;
 }
 
 .hero-text {
-  width: 80%;
+  width: 70%;
   margin: 0px auto 0px auto;
+  text-align: left;
 }
 
 .hero-img {
@@ -32,8 +67,10 @@ body {
 
 .card-box {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 32px 32px;
 }
 
 .project-text {
@@ -41,25 +78,28 @@ body {
 }
 
 .project-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  /* gap: 2rem; */
+  width: auto;
   padding: 1.5rem;
-  min-width: 200px;
+  width: auto;
+  max-width: 300px;
   box-shadow: 8px 8px 0px 2px #271c19;
   background-color: #fff3ec;
   color: #271c19;
-  margin: 32px 80px;
-  border-radius: 5px 5px 5px 120px;
+  margin: 32px 16px;
+  border-radius: 5px 120px 5px 120px;
 }
 
 .project-image {
   object-fit: cover;
-  width: 400px;
-  height: 400px;
+  width: 95%;
+  height: 250px;
   border: 8px solid #e78fb3;
   border-radius: 5px 100px;
+  margin: auto;
 }
 
 .project-text {
@@ -67,25 +107,25 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: auto;
+  margin: 8px 0px;
 }
 
 .button {
   background-color: #ffc0ad;
   color: #271c19;
   width: fit-content;
-  padding: 8px;
+  padding: 16px 32px;
   margin: 8px 12px 12px 8px;
   font-size: 24px;
   text-decoration: none;
-  text-align: center;
-  box-shadow: 4px 4px 0px 2px #271c19;
-  border-radius: 5px;
+  box-shadow: 4px 4px 0px 2px #55423d;
+  border-radius: 5px 20px;
+  font-family: limelight;
 }
 
 .button:hover {
   /* background-color: #e78fb3; */
-  color: #271c19;
-  box-shadow: inset 2px 2px 0px 2px #271c19;
+  box-shadow: inset 2px 2px 0px 2px #55423d;
 }
 
 .bottom-left {
